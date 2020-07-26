@@ -11,20 +11,20 @@ import SwiftUI
 struct TextInputView: View {
     var name = ""
     var secure = false
+    var modify = false
     @State private var value = ""
 //    @Binding var value: String = "park"
     var body: some View {
         VStack{
-            TextField(name, text: $value)
+            TextField(name, text: $value).disabled(modify)
                 .padding(.horizontal)
             Divider()
-
+                .frame(height: 1)
                 .background(Color.gray)
                 .padding(.horizontal)
         }
         .padding(.vertical)
     }
-   
 }
 
 struct TextInputView_Previews: PreviewProvider {
