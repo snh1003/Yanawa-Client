@@ -80,7 +80,8 @@ struct ContentView_Previews: PreviewProvider {
                               title: "SwiftUI",
                               language: "Swift",
                               star: 1000,
-                              description: "Declare the user interface and behavior for your app on every platform.", url: "https:exmaple.com"))
-            .previewLayout(.sizeThatFits)
+                              description: "sadfs", url: "https:exmaple.com"))
+        .padding()
+        .previewLayout(.sizeThatFits)
     }
 }
